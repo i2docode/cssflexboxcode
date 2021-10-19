@@ -1,0 +1,48 @@
+body{
+    font-size: 18px;
+}
+
+.header-style{
+    width: 90%;/* width is set to 90% of the browser window.*/
+    padding: 10px; /*space around the content within the container*/
+    border: black 10px solid;/*container border styling*/
+}
+
+.header-style p{/*the header paragraph styling*/
+    text-align: center;
+}
+
+#section-one{
+    width: 90%;/* width is set to 95% of the browser window*/
+    padding: 10px; /*space around the content within the container*/
+    border: red 10px solid;/* section-one container border styling*/
+    font-size: 1em;/*font size is relative to font size set in the body*/
+}
+
+.container{
+    width: 100%;/*width is set to 100% of the #section-one*/
+    text-align: center;/*the container paragraph styling*/
+}
+
+ul{/*section-one child list element styling*/
+    text-align: left;
+    font-size: 1.5em; /*same as saying 150% the parent font-size = #section-one*/
+}
+
+.button {
+    display: inline-block;
+    background: red;
+    color: black;
+    padding: .5em 1.25em;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+.btn-big{
+    font-size: 1.5rem;
+}
+
+.btn-small{
+    font-size: .75rem;
+}

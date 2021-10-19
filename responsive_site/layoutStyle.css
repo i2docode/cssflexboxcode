@@ -1,0 +1,75 @@
+/* layout */
+
+body{
+    font-size: 1.125rem;/*1.125rem of 16px font-size*/
+    color: #707070;
+    margin: 0;/*gives space around body of content container*/
+}
+
+h1{
+    font-size: 3rem;
+    color: #212614;
+    text-align: center;
+}
+
+h1 span{
+    color: #b7832f;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+.container{
+    border: solid 10px red;
+    width: 100%;/*95% of the browser window/viewport*/
+    max-width: 980px;/*most alloted amount of pixels*/
+    margin: 0 auto;
+}
+
+.columns{
+    display: flex;
+    border: solid 5px silver;
+    margin: 1em 0;
+}
+
+.col{
+    border: solid 2.5px blue; 
+
+}
+
+/*
+should be a fraction of the total parent width percentage.
+container(parent) -> columns -> col/col-1, col-2, col-3.
+*/ 
+
+/* setting up the columns widths */
+.col-1{
+    width: 25%;
+    padding: .5em;
+}
+
+.col-2{
+    width: 50%;
+    padding: .5em;
+}
+
+.col-3{
+    width: 75%;
+    padding: .5em;
+}
+
+.col-bg{
+    background-color: #312614;
+    color: #fff;
+    padding: .5em;
+}
+
+
+
+
+

@@ -1,0 +1,78 @@
+/*know what it does!!...*/
+
+/* layout */
+
+body{
+    font-size: 1.125rem;/*1.125rem of default 16px font-size*/
+    color: #707070;/*font color*/
+    margin: 0;/*gives space around body of content container*/
+}
+
+h1{
+    font-size: 3rem;
+    color: #212614;
+    text-align: center;
+}
+
+h1 span{
+    color: #b7832f;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+.container{/*grand parent*/
+    border: solid 10px red;
+    width: 100%;/*95% of the browser window/viewport*/
+    max-width: 980px;/*most alloted amount of pixels*/
+    margin: 0 auto;
+}
+
+.columns{/*parent*/
+    display: flex;
+    justify-content: space-center;
+    align-items: flex-end;
+    border: solid 5px silver;
+    margin: 1em 0;
+}
+
+.col{/*child*/
+    border: solid 2.5px blue; 
+}
+
+/*
+should be a fraction of the total parent width percentage.
+container(grand parent) -> columns(parent) -> col/col-1, col-2, col-3.
+*/ 
+
+/* setting up the columns widths */
+.col-1{
+    width: 20%;/*25% of the content area*/
+    padding: .5em
+}
+
+.col-2{
+    width: 45%;/*50% of the content area*/
+    padding: .5em
+}
+
+.col-3{
+    width: 70%;/*75% of the content area*/
+    padding: .5em
+}
+
+.col-bg{
+    background-color: #312614;
+    color: #fff;
+    padding: 1em;
+}
+
+
+
+
+

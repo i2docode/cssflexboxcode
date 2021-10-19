@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Design</title>
+</head>
+<!-- Responsive design is used to allow websites and apps to render well
+on different devices and windows or screen sizes.
+
+- How to approach a layout 
+- CSS units (absolute, relative, and percentages)
+- Flexbox basics (our layout tool)
+- Media Query basics (adapting to different screen sizes)
+
+
+*CSS Units*
+- absolute; real world measurements (px, pt, cm, mm, in, etc.)
+
+- relative; relative to font, relative to viewport (em, rem, ch)
+viewport(vw, vh, vmin, vmax)
+
+- percentage; % used usually for widths. relative to parents
+
+Percentages; 
+
+    - percentages can be used to set elements to be a percent of their parent.
+
+    - controlling width of images in a container; img{ width: 100%} 
+    or img{width: 100%} of the parent container/element.
+
+    - minwidth/maxwidth; avoid stretched content in a container/element; minwidth & maxwidth
+    gives a expansion limit. .element{max-width: 620px} will not get bigger than 620px
+    or .element{minwidth: 500px} will not go smaller than 500px.
+
+    - minwidth/maxwidth; can be used together with percentages.
+
+Em Unit;
+    
+    - relative units relative to something else or font-size;
+    - relativity is inherited
+    - ems set to font-size = font-size becomes relative to the parent element.
+
+Em Unit Problems;
+
+    - creates inconvenient cascading effect that affects other elements
+
+Rem Unit;
+
+    - solution to the em unit issue.
+    - root em; relative to the root of our document
+    - root of an html page is always the html element
+    - best to use rem for font-size.
+
+Hot to decide which unit to use;
+
+    - font-size; rem 
+    - margin, padding: em
+    - widths; em or percentage
+    - em on padding/margin is relative to the font-size of the element.
+
+Justify content; 
+
+    - event distributes space between elements
+    - should be placed on the parent elements
+    - good with display: flex;
+
+Align items;
+
+    - aligns items on vertical axis to match the alignment of the element with
+    the greatest height.
+
+    - aligns flex items across the cross axis of the current line of the current 
+    flex container.
+
+Media Queries;
+
+    - feature that lets us add new styles based on specific conditions.
+
+    - syntax; @media-type and (media-features) {...}
+-->
+    <body>
+        <header class='header-style'>
+            <p>
+                This is fake some text.
+                This is fake some text.
+                This is fake some text.
+            </p>
+        </header>
+
+        <section id='section-one'>
+            <div class='container'>
+                <h2>Putting ems to use</h2>
+                <ul>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                </ul>
+                <div class='contained'>
+                    <p>Netus et malesuada fames ac. 
+                        <a href="#">Sed cras ornare arcu</a> dui vivamus. 
+                        <strong>Elementum integer enim neque</strong> 
+                        volutpat ac tincidunt vitae semper.
+                    </p>
+                        <input class='button btn-big' type="button" value='contact me'/>
+                        <input class= 'button' type="button" value='default'/>
+                        <input class= 'button btn-small' type="button" value='about me'/>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
